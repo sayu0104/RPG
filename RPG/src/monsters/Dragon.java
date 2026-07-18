@@ -12,6 +12,6 @@ public class Dragon extends Monster {
         
     	this.hp = Dice.get(270, 330);// 【タスク②】ヒットポイント（hp）の値を 270 〜 330 の乱数で決定してセットする
         
-        // 【タスク③】攻撃力（offensive）の値を 12 〜 18 の乱数で決定してセットする
+    	this.offensive = Dice.get(12,18);// 【タスク③】攻撃力（offensive）の値を 12 〜 18 の乱数で決定してセットする
     }
 }
