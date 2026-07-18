@@ -12,6 +12,6 @@ public class Wizard extends Human {
         
     	this.hp = Dice.get(120, 180);// 【タスク②】ヒットポイント（hp）の値を 120 〜 180 の乱数で決定してセットする
         
-        // 【タスク③】攻撃力（offensive）の値を 12 〜 18 の乱数で決定してセットする
+    	this.offensive = Dice.get(12, 18);// 【タスク③】攻撃力（offensive）の値を 12 〜 18 の乱数で決定してセットする
     }
 }
