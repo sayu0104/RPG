@@ -12,6 +12,6 @@ public class Oak extends Monster {
         
     	this.hp = Dice.get(170, 230);// 【タスク②】ヒットポイント（hp）の値を 170 〜 230 の乱数で決定してセットする
         
-        // 【タスク③】攻撃力（offensive）の値を 9 〜 15 の乱数で決定してセットする
+    	this.offensive = Dice.get(9,15);// 【タスク③】攻撃力（offensive）の値を 9 〜 15 の乱数で決定してセットする
     }
 }
