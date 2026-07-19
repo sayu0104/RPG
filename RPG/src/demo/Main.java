@@ -49,13 +49,35 @@ public class Main {
         showGroupInfos(humans, monsters);
 
         // --- ここから下はStep 5で実装するため、まだ触りません ---
-        /*
+        
+       // 第何回戦かを示すカウンター変数
         int count = 1;
+        
+        // 勝敗がつくまで無限ループ
         while (true) {
-            // 戦闘ループ（後ほど実装）
-            break; 
+            System.out.printf("\n★ 第%d回戦 ==========\n", count);
+
+            System.out.println("\n[人間のターン！]\n");
+            // 【タスク①】人間グループからランダムに1人選択する
+            Human human = choiceHuman(humans);
+            
+            // 【タスク②】モンスターグループからランナムに1人選択する
+            
+            // 【タスク③】選ばれた人間が、選ばれたモンスターを攻撃する
+            
+            // 【タスク④】もしモンスターのHPが0以下になったら、グループから削除する
+
+
+            System.out.println("\n[モンスターのターン！]\n");
+            // （後ほど実装します）
+
+            
+            // 現在の各グループの状態を一覧表示
+            showGroupInfos(humans, monsters);
+
+            // ループ変数を1増やす
+            count++;
         }
-        */
     }
 
     // 引数でもらった人間グループリストからランダムに1人を選択し、その結果を戻り値とするメソッド
