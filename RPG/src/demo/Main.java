@@ -41,7 +41,9 @@ public class Main {
         List<Monster> monsters = new ArrayList<>();
         
         // 【タスク④】生成したスライム、オーク、ドラゴンをモンスターグループのリストに追加する
-        
+        monsters.add(slime);
+        monsters.add(oak);
+        monsters.add(dragon);
 
         // 現在の各グループの状態を一覧表示
         showGroupInfos(humans, monsters);
