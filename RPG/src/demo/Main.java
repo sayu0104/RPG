@@ -65,6 +65,7 @@ public class Main {
             Monster monster = choiceMonster(monsters);
             
             // 【タスク③】選ばれた人間が、選ばれたモンスターを攻撃する
+            human.attack(monster);
             
             // 【タスク④】もしモンスターのHPが0以下になったら、グループから削除する
 
