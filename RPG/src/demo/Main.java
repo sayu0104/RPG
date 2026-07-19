@@ -62,6 +62,7 @@ public class Main {
             Human human = choiceHuman(humans);
             
             // 【タスク②】モンスターグループからランナムに1人選択する
+            Monster monster = choiceMonster(monsters);
             
             // 【タスク③】選ばれた人間が、選ばれたモンスターを攻撃する
             
