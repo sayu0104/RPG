@@ -8,6 +8,9 @@ import bases.Monster;
 import humans.Brave;
 import humans.Fighter;
 import humans.Wizard;
+import monsters.Dragon;
+import monsters.Oak;
+import monsters.Slime;
 import utils.Dice;
 
 public class Main {
@@ -30,7 +33,9 @@ public class Main {
         
         // 【タスク③】モンスターグループの各インスタンスを生成する
         // 仕様：Slimeは「キングスライム/体当たり」、Oakは「オークキング/槍」、Dragonは「紅龍/炎」
-        
+        Slime slime = new Slime("キングスライム", "体当たり");
+        Oak oak = new Oak("オークキング", "槍");
+        Dragon dragon = new Dragon("紅龍", "炎");
         
         // モンスターグループのリストを空で生成
         List<Monster> monsters = new ArrayList<>();
