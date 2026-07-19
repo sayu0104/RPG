@@ -24,7 +24,9 @@ public class Main {
         List<Human> humans = new ArrayList<>();
         
         // 【タスク②】生成した勇者、戦士、魔法使いを人間グループのリストに追加する
-        
+        humans.add(brave);
+        humans.add(fighter);
+        humans.add(wizard);
         
         // 【タスク③】モンスターグループの各インスタンスを生成する
         // 仕様：Slimeは「キングスライム/体当たり」、Oakは「オークキング/槍」、Dragonは「紅龍/炎」
