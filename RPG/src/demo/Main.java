@@ -68,10 +68,42 @@ public class Main {
             human.attack(monster);
             
             // 【タスク④】もしモンスターのHPが0以下になったら、グループから削除する
-
+            if (monster.getHp() <= 0) {
+                // 1. 「〇〇は倒れた。」と表示（〇〇には monster.getName() を使います）
+            	System.out.println("「" + monster.getName() + "は倒れた。」");
+                
+                // 2. monsters リストから、倒れた monster を削除（remove）する
+                // ヒント： リスト名.remove(変数名);
+            	monsters.remove(monster);
+                
+                // 3. もしモンスターグループに誰もいなくなったら、人間の勝利を表示してループを抜ける
+                if (monsters.isEmpty()) {
+                    System.out.println("人間の勝利！");
+                    // ループを強制終了して抜ける命令
+                    break;
+                }
+            }
 
             System.out.println("\n[モンスターのターン！]\n");
             // （後ほど実装します）
+            monster =choiceMonster(monsters);
+            
+            human = choiceHuman(humans);
+            
+            monster.attack(human);
+            
+            if(human.getHp() <= 0) {
+            	
+            	System.out.println("「" + human.getName() + "は倒れた。」");
+            	
+            	humans.remove(human);
+            	
+            	if(humans.isEmpty()) {
+            		System.out.println("モンスターの勝利！");
+            		System.out.println("人間グループの敗北");
+            		break;
+            	}
+            }
 
             
             // 現在の各グループの状態を一覧表示
