@@ -70,7 +70,7 @@ public class Main {
             // 【タスク④】もしモンスターのHPが0以下になったら、グループから削除する
             if (monster.getHp() <= 0) {
                 // 1. 「〇〇は倒れた。」と表示（〇〇には monster.getName() を使います）
-            	System.out.println("「" + monster.getName() + "は倒れた。」");
+            	System.out.println("「" + monster.getName() + "」" + "は倒れた。");
                 
                 // 2. monsters リストから、倒れた monster を削除（remove）する
                 // ヒント： リスト名.remove(変数名);
@@ -94,7 +94,7 @@ public class Main {
             
             if(human.getHp() <= 0) {
             	
-            	System.out.println("「" + human.getName() + "は倒れた。」");
+            	System.out.println("「" + human.getName() + "」" + "は倒れた。");
             	
             	humans.remove(human);
             	
@@ -112,6 +112,8 @@ public class Main {
             // ループ変数を1増やす
             count++;
         }
+        System.out.println("\n★★ ==== 決着がついた！！ ==== ★★\n");
+        showGroupInfos(humans, monsters);
     }
 
     // 引数でもらった人間グループリストからランダムに1人を選択し、その結果を戻り値とするメソッド
